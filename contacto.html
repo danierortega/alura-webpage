@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<tittle>Contacto-Italiano</tittle>-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img class="logo" src="images/LDVRetrato2.jpg" alt="Logo de la tienda Italiano"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padre" required>
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padre" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padre" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" name="contacto" rows="10" id="mensaje" class="input-padre" required></textarea>
+
+            <fieldset>
+                <legend>¿Como le gustaria que nos contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Telefono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Como desea realizar su compra?</legend>
+                <select>
+                    <option>Tienda</option>
+                    <option>Domicilio</option>
+                    <option>Recoger</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la tienda
+                Italiano?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Dia</td>
+                    <td>Horario</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img class="pie" src="images/leonardo-da-vinci.jpg" alt="Logo de la tienda Italiano">
+        <p class="copyright">&copy Copyright Italiano -2023</p>
+    </footer>
+</body>
+
+</html>

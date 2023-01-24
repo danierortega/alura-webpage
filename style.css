@@ -1,0 +1,315 @@
+
+header{
+    background-color: rgb(111, 111, 111);
+    padding: 20px 0;
+}
+
+.logo{
+    width: 10%;
+    border-radius: 10%;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(97, 91, 3);
+    text-decoration: underline;
+}
+
+/*CSS para PRODUCTOS*/
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: rgb(97, 91, 3);
+}
+
+.productos li:active{
+    border-color: rgb(77, 163, 2);
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.coleccion{
+    width: 200px;
+    height: 300px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(images/360_F_467678707_2HGvlibdCAbYS1cNxAgvdMissnB00eiY.jpg);
+    padding: 10px;
+}
+
+.pie{
+    width: 200px;
+    border-radius: 100px;
+}
+
+.copyright{
+    color: #fff;
+    font-size: 13px;
+    margin: 10px;
+}
+
+/*CSS para CONTACTO*/
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padre{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(126, 84, 5);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    /* transform: scale(1.05) rotate(5deg);*/
+    transform: scale(1.05);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/*CSS para HOME*/
+
+.banner{
+    width: 100%;
+    height: 300px;
+}
+
+/*tipos de seleccion */
+/*
+main > p{
+    background: red;
+}
+
+img + p{
+    background: yellow;}
+
+img ~ p{
+    background: green;}
+
+.principal p:not(#death){
+    background: orange;
+*/
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0,0,0,0.5);
+}
+
+/*PSEUDO-ELEMENTOS*/
+/*.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+p:first-line {
+    font-style: italic;
+}
+.titulo-principal:before{
+    content: "[";
+}
+
+.titulo-principal:after{
+    content: "]";
+}
+*/
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888) ;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.difer{
+    padding: 3em 0;
+    background: #888;
+}
+
+.contenido-difer{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-difer{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "☆";
+}
+
+.items:nth-child(1){
+    font-weight: bold;
+}
+
+.img-difer{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 15px #000;
+}
+
+.img-difer:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-difer, .video{
+        width: auto;
+    }
+
+    .lista-difer, .img-difer{
+        width: 100%;
+    }
+}
+
+

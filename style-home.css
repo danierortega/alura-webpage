@@ -1,0 +1,52 @@
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner {
+    width: 1000px;
+    height: 400px;
+}
+
+.principal {
+    background: #cccccc;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+strong {
+    color: red ;
+}
+
+#death {
+    font-size: 20px;
+}
+
+.difer{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.items {
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgVitruvio{
+    width: 40%;
+    vertical-align: top;
+    margin-left: 30%;
+}
